@@ -64,8 +64,8 @@ int main(){
       }
     }
 
-   	measurement(0)= (float)sum_x/count;
-   	measurement(1) = (float)sum_y/count;
+   	measurement(1)= (float)sum_x/count;
+   	measurement(0) = (float)sum_y/count;
     cout<<measurement<<endl<<"This is the measurement output"<<endl;
     Mat prediction = KF.predict();
  	Point predictPt(prediction.at<float>(0),prediction.at<float>(1));
